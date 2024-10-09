@@ -1,0 +1,92 @@
+<h2>Form Pemesanan Tiket Pesawat</h2>
+
+
+<form>
+  <fieldset>
+
+    <legend>
+      <h2>Informasi Penumpang</h2>
+    </legend>
+
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" id="nama" value="Masukkan Nama Lengkap"><br><br>
+
+    <label for="nomorIdentitas">Nomor Identitas (KTP/Paspor):</label>
+    <input type="text" id="nomorIdentitas" value="Masukkan Nomor Identitas"><br><br>
+
+    <label for="jenisKelamin">Jenis Kelamin:</label>
+    <select id="jenisKelamin">
+      <option value="Laki-laki" selected>Laki-laki</option>
+      <option value="Perempuan">Perempuan</option>
+    </select><br><br>
+
+    <label for="email">Alamat Email:</label>
+    <input type="email" id="email" value="Masukkan Email"><br><br>
+
+    <label for="telepon">Nomor Telepon:</label>
+    <input type="tel" id="telepon" value="Masukkan Nomor Telepon"><br><br>
+  </fieldset>
+
+  <form>
+    <fieldset>
+
+      <legend>
+        <h2>Informasi Penerbangan</h2>
+      </legend>
+
+      <label for="keberangkatan">Bandara Keberangkatan:</label>
+      <select id="keberangkatan">
+        <option value="CGK" selected>Soekarno-Hatta (CGK)</option>
+        <option value="DPS" selected>Bandara Internasional I gusti Ngurah Rai (Denpasar, Bali) </option>
+        <option value="SUB" selected>Juanda</option>
+        <option value="KNO" selected>Bandara Internasional kualanamu (Medan)</option>
+      </select><br><br>
+
+      <label for="tujuan">Bandara Tujuan:</label>
+      <select id="tujuan">
+        <option value="CGK" selected>Soekarno-Hatta (CGK)</option>
+      </select><br><br>
+
+      <label for="tanggalBerangkat">Tanggal Keberangkatan:</label>
+      <input type="date" id="tanggalBerangkat" value="2024-09-26"><br><br>
+
+      <label for="tanggalPulang">Tanggal Kepulangan (opsional):</label>
+      <input type="date" id="tanggalPulang" value="2024-09-26"><br><br>
+
+      <label for="jumlahPenumpang">Jumlah Penumpang:</label>
+      <input type="number" id="jumlahPenumpang" min="1" value="1"><br><br>
+
+      <label for="kelasPenerbangan">Kelas Penerbangan:</label>
+      <select id="kelasPenerbangan">
+        <option value="Ekonomi" selected>Ekonomi</option>
+        <option value="Bisnis">Bisnis</option>
+        <option value="First Class">First Class</option>
+      </select><br><br>
+    </fieldset>
+  </form>
+    <form>
+      <fieldset>
+
+        <legend><h3>Metode Pembayaran</h3></legend>
+
+        <h3>Pilih Metode Pembayaran:</h3>
+
+
+        <input type="radio" id="kartuKredit" name="pembayaran" value="Kartu Kredit">
+        <label for="kartuKredit">Kartu Kredit</label><br>
+        <input type="radio" id="transferBank" name="pembayaran" value="Transfer Bank">
+        <label for="transferBank">Transfer Bank</label><br>
+        <input type="radio" id="eWallet" name="pembayaran" value="E-Wallet">
+        <label for="eWallet">E-Wallet (GoPay, OVO, dll.)</label><br><br>
+
+
+      </fieldset>
+      <legend></legend>
+
+      <input type="submit" value="Pesan Tiket">
+
+
+    </form>
+
+  </body>
+  <html>
